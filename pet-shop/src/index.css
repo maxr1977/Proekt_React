@@ -1,0 +1,15 @@
+body {
+  
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

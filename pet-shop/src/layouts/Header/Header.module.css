@@ -1,0 +1,120 @@
+.header {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1390px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo {
+  height: 70px;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: #282828;
+  transition: color 0.2s;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #0d50ff;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart_link {
+  position: relative;
+}
+
+.cart_icon {
+  height: 48px;
+}
+
+.cart_count {
+  position: absolute;
+  top: 7px;
+  background-color: #0d50ff;
+  color: white;
+  border-radius: 50%;
+  min-width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 90%;
+  border: 2px solid white;
+}
+
+.hamburger_btn {
+  display: none; 
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.bar {
+  width: 2rem;
+  height: 0.25rem;
+  background: #282828;
+  border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    transition: left 0.3s ease-in-out;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav_open {
+    left: 0;
+  }
+
+  .nav a {
+    font-size: 22px;
+  }
+
+  .hamburger_btn {
+    display: flex;
+  }
+}

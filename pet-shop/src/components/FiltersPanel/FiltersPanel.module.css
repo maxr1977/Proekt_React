@@ -1,0 +1,42 @@
+.filters_panel {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 10px 0;
+}
+
+.filters_panel label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 15px;
+    color: #555;
+}
+
+.price_filter, .discount_filter, .sort_filter {
+    display: flex;
+    align-items: center;
+}
+
+.price_filter input {
+    width: 100px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+
+.discount_filter input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.sort_filter select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    min-width: 150px;
+}

@@ -1,0 +1,102 @@
+.cart_page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px 40px 15px;
+}
+
+
+.cart_content {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 30px;
+}
+
+.order_details {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+}
+.order_details h2 {
+    margin-top: 0;
+}
+
+
+.empty_cart_container {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.empty_cart_container h2 {
+    font-size: 36px;
+}
+.empty_cart_container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.empty_cart_container a {
+    width: 250px;
+}
+
+.order_details {
+    padding: 30px 25px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    align-self: flex-start; 
+}
+.order_details h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.total_summary {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.summary_row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.summary_row p {
+    margin: 0;
+}
+
+.discount_amount {
+    color: #393; 
+}
+
+.grand_total {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.success_modal_content {
+  background-color: #2D63D8;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.success_modal_content h2 {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.success_modal_content p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 10px 0;
+}

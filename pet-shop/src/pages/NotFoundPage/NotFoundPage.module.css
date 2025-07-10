@@ -1,0 +1,49 @@
+.not_found_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    max-width: 600px;
+}
+
+.number_404 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.digit {
+    font-size: 150px;
+    font-weight: bold;
+    color: #2D63D8;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 20px;
+}
+
+.content h2 {
+    font-size: 48px;
+    margin: 0 0 15px 0;
+}
+
+.content p {
+    font-size: 18px;
+    color: #8B8B8B;
+    margin-bottom: 30px;
+}
+
+
+.content a {
+    width: 200px;
+    display: inline-block;
+}

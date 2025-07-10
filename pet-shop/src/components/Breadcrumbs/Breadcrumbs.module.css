@@ -1,0 +1,40 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px; 
+}
+
+.crumb {
+  border: 1px solid #E3E3E3;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.crumb a {
+  color: #8B8B8B; 
+  font-size: 16px;
+  line-height: 1,26;
+}
+
+
+.active_crumb {
+  border: 1px solid #E3E3E3;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: white;
+}
+
+
+.active_crumb span {
+  color: #282828; 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 126%;
+}
+
+
+.separator {
+  width: 16px;
+  height: 1px;
+  background-color: #ddd;
+}

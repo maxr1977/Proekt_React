@@ -1,0 +1,45 @@
+.promo_section {
+  max-height: 600px;
+  background-image: url('../../assets/promo-background.png');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 40px 210px;
+}
+
+.content h1 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 110%;
+  color: #fff;
+  max-width: 1000px;
+  margin: 0 0 40px 0;
+}
+
+.promo_button {
+  background-color: #0d50ff;
+  color: #fff;
+  border: none;
+  padding: 16px 56px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.promo_button:hover {
+  background-color: #282828;
+}
+
+@media (max-width: 900px) {
+  .content h1 {
+    font-size: 76px;
+  }
+}
+
+@media (max-width: 500px) {
+  .content h1 {
+    font-size: 50px;
+  }
+}
