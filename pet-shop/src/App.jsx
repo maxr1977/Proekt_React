@@ -2,12 +2,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import MainLayout from './layouts/MainLayout'
 import MainPage from './pages/MainPage/MainPage'
 import CategoriesPage from './pages/CategoriesPage/CategoriesPage'
-import ProductsPage from './pages/ProductsPage/ProductsPage';
-import AllProductsPage from './pages/AllProductsPage/AllProductsPage';
+import ProductsPage from './pages/ProductsPage/ProductsPage'
+import AllProductsPage from './pages/AllProductsPage/AllProductsPage'
 import AllSalesPage from './pages/AllSalesPage/AllSalesPage'
-import SingleProductPage from './pages/SingleProductPage/SingleProductPage';
-import CartPage from './pages/CartPage/CartPage';
-import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
+import SingleProductPage from './pages/SingleProductPage/SingleProductPage'
+import CartPage from './pages/CartPage/CartPage'
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage'
 
 const router = createBrowserRouter([
   {
@@ -27,33 +27,33 @@ const router = createBrowserRouter([
 
       {
         path: '/categories/:id',
-        element: <ProductsPage />
+        element: <ProductsPage />,
       },
 
       {
         path: '/products',
-        element: <AllProductsPage />
+        element: <AllProductsPage />,
       },
 
       {
         path: '/sales',
-        element: <AllSalesPage />
+        element: <AllSalesPage />,
       },
 
       {
         path: '/products/:id',
-        element: <SingleProductPage />
+        element: <SingleProductPage />,
       },
 
       {
         path: '/cart',
-        element: <CartPage />
+        element: <CartPage />,
       },
 
       {
-    path: '*',
-    element: <NotFoundPage />
-  }
+        path: '*',
+        element: <NotFoundPage />,
+      },
     ],
   },
 ])
