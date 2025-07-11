@@ -8,7 +8,7 @@ import ContactForm from '../../components/ContactForm/ContactForm'
 import { clearCart } from '../../store/slices/cartSlice'
 import api from '../../api'
 import Modal from '../../ui/Modal/Modal'
-import SectionHeader from '../../components/SectionHeader/SectionHeader'; 
+import SectionHeader from '../../components/SectionHeader/SectionHeader'
 
 export default function CartPage() {
   const dispatch = useDispatch()
@@ -19,7 +19,7 @@ export default function CartPage() {
   const cartItems = useSelector((state) => state.cart.list)
   const isDiscountEligible = useSelector((state) => state.discount.isEligible)
 
-  const uniqueItemsCount = cartItems.length;
+  const uniqueItemsCount = cartItems.length
 
   const subtotal = cartItems.reduce(
     (sum, item) => sum + (item.discont_price ?? item.price) * item.count,
@@ -52,12 +52,20 @@ export default function CartPage() {
 
   if (cartItems.length === 0) {
     return (
-      <div className={styles.empty_cart_container}>
-        <h2>Shopping cart</h2>
-        <p>Looks like you have no items in your basket currently.</p>
-        <Link to="/products">
-          <UIButton theme="primary">Continue Shopping</UIButton>
-        </Link>
+      <div className={styles.cart_page}>
+        <div className={styles.container}>
+          <SectionHeader
+            title="Shopping cart"
+            buttonText="Back to the store"
+            linkTo="/products"
+          />
+          <div className={styles.empty_cart_container}>
+            <p>Looks like you have no items in your basket currently.</p>
+            <Link to="/products">
+              <UIButton theme="primary">Continue Shopping</UIButton>
+            </Link>
+          </div>
+        </div>
       </div>
     )
   }
@@ -65,9 +73,9 @@ export default function CartPage() {
   return (
     <div className={styles.cart_page}>
       <div className={styles.container}>
-        <SectionHeader 
-          title="Shopping cart" 
-          buttonText="Back to the store" 
+        <SectionHeader
+          title="Shopping cart"
+          buttonText="Back to the store"
           linkTo="/products"
         />
 
